@@ -2,33 +2,39 @@ package com.cog.bankapp.entity;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 //-----------------------------------------------------Entity class for accounts of customers-----------------------------------------
-@Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long accountId;
+    private Integer accountId;
 
     @NotNull
     private String accountType;
 
     @NotNull
-    private String accountBalance;
+    private Double accountBalance;
 
     @NotNull
-    private String accountNumber;
+    private LocalDate accountCreationDate;
+
+    @NotNull
+    private Long accountNumber;
 
     @NotNull
     private String accountIfscCode;
 
     @NotNull
-    private Long customerId;
+    private Integer customerId;
 }
