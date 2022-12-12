@@ -1,4 +1,4 @@
-package com.cog.bankapp.services;
+package com.cog.bankapp.services.customer;
 
 import com.cog.bankapp.entity.Customer;
 

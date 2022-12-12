@@ -1,7 +1,7 @@
-package com.cog.bankapp.controller;
+package com.cog.bankapp.controller.customer;
 
 import com.cog.bankapp.entity.Customer;
-import com.cog.bankapp.services.CustomerServices;
+import com.cog.bankapp.services.customer.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 public class CustomerController {

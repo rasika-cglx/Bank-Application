@@ -1,13 +1,14 @@
-package com.cog.bankapp.services;
+package com.cog.bankapp.services.accounts.impl;
 
 import com.cog.bankapp.dao.AccountDao;
 import com.cog.bankapp.entity.Account;
+import com.cog.bankapp.services.accounts.AccountServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class AccountServiceImpl implements AccountServices{
+public abstract class AccountServiceImpl implements AccountServices {
 
     @Autowired
     private AccountDao accountDao;

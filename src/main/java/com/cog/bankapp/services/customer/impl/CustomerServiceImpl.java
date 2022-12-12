@@ -1,7 +1,8 @@
-package com.cog.bankapp.services;
+package com.cog.bankapp.services.customer.impl;
 
 import com.cog.bankapp.dao.CustomerDao;
 import com.cog.bankapp.entity.Customer;
+import com.cog.bankapp.services.customer.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
